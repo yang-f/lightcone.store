@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="AI 导航网站：收录大模型、工具、智能体与资源">
+    <meta property="og:title" content="AI 导航">
+    <meta property="og:description" content="快速发现好用的 AI 工具与资源">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="https://lightcone.store/">
+    <meta property="og:url" content="https://lightcone.store/">
+    <meta property="og:image" content="https://lightcone.store/favicon.ico">
+    <meta name="theme-color" content="#111319">
+    <title>AI 导航</title>
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+    <link rel="alternate icon" href="/favicon.ico">
+    <link rel="preload" as="fetch" href="assets/data.json" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <h1 class="logo"><img src="assets/logo.svg" alt="LightCone" height="28" style="vertical-align:middle"> <span class="brand">LightCone</span></h1>
+            <div class="controls">
+                <button id="themeToggle" class="btn" aria-label="切换主题">🌓</button>
+                <a class="btn" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="search-section">
+            <input id="searchInput" class="search-input" type="search" placeholder="搜索名称、标签或描述…" aria-label="搜索">
+            <div id="categoryChips" class="chips"></div>
+            <div class="toolbar">
+                <label class="checkbox">
+                    <input id="showFavoritesOnly" type="checkbox"> 仅看收藏
+                </label>
+                <select id="sortSelect" class="select">
+                    <option value="default">默认排序</option>
+                    <option value="az">名称 A→Z</option>
+                    <option value="za">名称 Z→A</option>
+                </select>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">站点列表</h2>
+            <div id="sitesGrid" class="grid"></div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>由 GitHub Pages 提供托管 · 使用本地存储保存收藏与主题偏好</p>
+        </div>
+    </footer>
+
+    <script src="assets/app.js" defer></script>
+</body>
+<!-- Deployed on GitHub Pages -->
+</html>
+
+

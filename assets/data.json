@@ -1,0 +1,85 @@
+{
+  "categories": [
+    { "id": "models", "name": "大模型" },
+    { "id": "tools", "name": "工具" },
+    { "id": "agents", "name": "智能体" },
+    { "id": "apps", "name": "应用" },
+    { "id": "code", "name": "编程" },
+    { "id": "images", "name": "图像" },
+    { "id": "video", "name": "视频" },
+    { "id": "audio", "name": "音频" },
+    { "id": "education", "name": "学习" },
+    { "id": "research", "name": "研究" },
+    { "id": "datasets", "name": "数据集" },
+    { "id": "design", "name": "设计" },
+    { "id": "productivity", "name": "效率" },
+    { "id": "community", "name": "社区" },
+    { "id": "infra", "name": "基础设施" }
+  ],
+  "sites": [
+    { "id": "openai", "name": "OpenAI", "url": "https://openai.com", "description": "GPT 模型与平台", "categoryIds": ["models"], "tags": ["GPT", "LLM"], "icon": "https://www.google.com/s2/favicons?sz=64&domain=openai.com" },
+    { "id": "openai-platform", "name": "OpenAI Platform", "url": "https://platform.openai.com", "description": "OpenAI API 控制台与文档", "categoryIds": ["models", "tools"], "tags": ["API", "Embeddings"], "icon": "https://www.google.com/s2/favicons?sz=64&domain=platform.openai.com" },
+    { "id": "anthropic", "name": "Anthropic", "url": "https://www.anthropic.com", "description": "Claude 模型与 API", "categoryIds": ["models"], "tags": ["Claude", "Safety"], "icon": "https://www.google.com/s2/favicons?sz=64&domain=anthropic.com" },
+    { "id": "google-ai-studio", "name": "Google AI Studio", "url": "https://aistudio.google.com", "description": "Gemini 模型与开发者平台", "categoryIds": ["models", "tools"], "tags": ["Gemini", "Google"], "icon": "https://www.google.com/s2/favicons?sz=64&domain=aistudio.google.com" },
+    { "id": "microsoft-azure-openai", "name": "Azure OpenAI", "url": "https://azure.microsoft.com/products/ai-services/openai-service", "description": "微软 Azure OpenAI 服务", "categoryIds": ["models", "infra"], "tags": ["Azure", "Enterprise"], "icon": "https://www.google.com/s2/favicons?sz=64&domain=azure.microsoft.com" },
+    { "id": "mistral", "name": "Mistral AI", "url": "https://mistral.ai", "description": "Mistral 开源与商用模型", "categoryIds": ["models"], "tags": ["Mistral", "LLM"], "icon": "https://www.google.com/s2/favicons?sz=64&domain=mistral.ai" },
+    { "id": "cohere", "name": "Cohere", "url": "https://cohere.com", "description": "Command/Embed 模型与 RAG", "categoryIds": ["models"], "tags": ["Command", "RAG"], "icon": "https://www.google.com/s2/favicons?sz=64&domain=cohere.com" },
+    { "id": "huggingface", "name": "Hugging Face", "url": "https://huggingface.co", "description": "模型与数据社区，Transformers、Datasets", "categoryIds": ["models", "datasets"], "tags": ["Transformers", "Spaces"], "icon": "https://www.google.com/s2/favicons?sz=64&domain=huggingface.co" },
+
+    { "id": "langchain", "name": "LangChain", "url": "https://langchain.com", "description": "智能体与 RAG 应用框架", "categoryIds": ["agents", "code"], "tags": ["RAG", "Agents"], "icon": "https://www.google.com/s2/favicons?sz=64&domain=langchain.com" },
+    { "id": "llamaindex", "name": "LlamaIndex", "url": "https://www.llamaindex.ai", "description": "数据连接与检索增强框架", "categoryIds": ["tools", "code"], "tags": ["RAG", "Index"], "icon": "https://www.google.com/s2/favicons?sz=64&domain=llamaindex.ai" },
+    { "id": "openrouter", "name": "OpenRouter", "url": "https://openrouter.ai", "description": "聚合多家模型的统一 API", "categoryIds": ["tools"], "tags": ["Routing", "Pricing"], "icon": "https://www.google.com/s2/favicons?sz=64&domain=openrouter.ai" },
+    { "id": "replicate", "name": "Replicate", "url": "https://replicate.com", "description": "在线运行开源 AI 模型", "categoryIds": ["tools", "images", "video", "audio"], "tags": ["Inference", "Hosted"], "icon": "https://www.google.com/s2/favicons?sz=64&domain=replicate.com" },
+    { "id": "vercel-ai", "name": "Vercel AI SDK", "url": "https://sdk.vercel.ai", "description": "前端流式对话与工具调用 SDK", "categoryIds": ["code", "tools"], "tags": ["Streaming", "React"], "icon": "https://www.google.com/s2/favicons?sz=64&domain=sdk.vercel.ai" },
+
+    { "id": "perplexity", "name": "Perplexity", "url": "https://www.perplexity.ai", "description": "AI 搜索与问答", "categoryIds": ["apps"], "tags": ["Search", "RAG"], "icon": "https://www.google.com/s2/favicons?sz=64&domain=perplexity.ai" },
+    { "id": "poe", "name": "Poe", "url": "https://poe.com", "description": "多模型聊天平台", "categoryIds": ["apps"], "tags": ["Chat", "Multi-Model"], "icon": "https://www.google.com/s2/favicons?sz=64&domain=poe.com" },
+    { "id": "notion-ai", "name": "Notion AI", "url": "https://www.notion.so/product/ai", "description": "笔记与知识库的 AI 助手", "categoryIds": ["productivity", "apps"], "tags": ["Notes", "Docs"], "icon": "https://www.google.com/s2/favicons?sz=64&domain=notion.so" },
+    { "id": "cursor", "name": "Cursor", "url": "https://cursor.sh", "description": "AI 驱动的代码编辑器", "categoryIds": ["code", "apps"], "tags": ["Editor", "Pair"], "icon": "https://www.google.com/s2/favicons?sz=64&domain=cursor.sh" },
+    { "id": "copilot", "name": "GitHub Copilot", "url": "https://github.com/features/copilot", "description": "GitHub 的编码助手", "categoryIds": ["code"], "tags": ["Autocompletion", "IDE"], "icon": "https://www.google.com/s2/favicons?sz=64&domain=github.com" },
+    { "id": "windsurf", "name": "Windsurf", "url": "https://codeium.com/windsurf", "description": "Codeium 团队的 IDE with AI", "categoryIds": ["code"], "tags": ["IDE", "Agent"], "icon": "https://www.google.com/s2/favicons?sz=64&domain=codeium.com" },
+
+    { "id": "midjourney", "name": "Midjourney", "url": "https://www.midjourney.com", "description": "图像生成", "categoryIds": ["images"], "tags": ["ImageGen", "Art"], "icon": "https://www.google.com/s2/favicons?sz=64&domain=midjourney.com" },
+    { "id": "stability", "name": "Stability AI", "url": "https://stability.ai", "description": "Stable Diffusion 模型与平台", "categoryIds": ["images", "models"], "tags": ["SDXL", "Generative"], "icon": "https://www.google.com/s2/favicons?sz=64&domain=stability.ai" },
+    { "id": "leonardo", "name": "Leonardo AI", "url": "https://leonardo.ai", "description": "设计与生图工作台", "categoryIds": ["images", "design"], "tags": ["ImageGen", "Design"], "icon": "https://www.google.com/s2/favicons?sz=64&domain=leonardo.ai" },
+    { "id": "civitai", "name": "Civitai", "url": "https://civitai.com", "description": "模型与 LoRA 社区", "categoryIds": ["images", "community"], "tags": ["LoRA", "Models"], "icon": "https://www.google.com/s2/favicons?sz=64&domain=civitai.com" },
+    { "id": "lexica", "name": "Lexica", "url": "https://lexica.art", "description": "提示词与图片搜索", "categoryIds": ["images", "design"], "tags": ["Prompts", "Search"], "icon": "https://www.google.com/s2/favicons?sz=64&domain=lexica.art" },
+
+    { "id": "runway", "name": "Runway", "url": "https://runwayml.com", "description": "视频生成与编辑（Gen-3）", "categoryIds": ["video"], "tags": ["Gen-Video", "Edit"], "icon": "https://www.google.com/s2/favicons?sz=64&domain=runwayml.com" },
+    { "id": "pika", "name": "Pika", "url": "https://www.pika.art", "description": "AI 视频生成", "categoryIds": ["video"], "tags": ["Video", "Generate"], "icon": "https://www.google.com/s2/favicons?sz=64&domain=pika.art" },
+
+    { "id": "elevenlabs", "name": "ElevenLabs", "url": "https://elevenlabs.io", "description": "多语言高级 TTS", "categoryIds": ["audio"], "tags": ["TTS", "Voice"], "icon": "https://www.google.com/s2/favicons?sz=64&domain=elevenlabs.io" },
+    { "id": "playht", "name": "Play.ht", "url": "https://play.ht", "description": "写实语音合成与克隆", "categoryIds": ["audio"], "tags": ["TTS", "Clone"], "icon": "https://www.google.com/s2/favicons?sz=64&domain=play.ht" },
+    { "id": "whisper", "name": "Whisper", "url": "https://github.com/openai/whisper", "description": "开源语音识别模型", "categoryIds": ["audio", "code"], "tags": ["ASR", "Transcribe"], "icon": "https://www.google.com/s2/favicons?sz=64&domain=github.com" },
+
+    { "id": "arxiv", "name": "arXiv", "url": "https://arxiv.org", "description": "开放科学论文预印本", "categoryIds": ["research"], "tags": ["Papers", "AI"], "icon": "https://www.google.com/s2/favicons?sz=64&domain=arxiv.org" },
+    { "id": "paperswithcode", "name": "Papers with Code", "url": "https://paperswithcode.com", "description": "论文与代码对照索引", "categoryIds": ["research", "code"], "tags": ["Benchmarks", "SOTA"], "icon": "https://www.google.com/s2/favicons?sz=64&domain=paperswithcode.com" },
+    { "id": "kaggle", "name": "Kaggle", "url": "https://kaggle.com", "description": "竞赛、数据集与笔记本", "categoryIds": ["datasets", "education"], "tags": ["Datasets", "Notebook"], "icon": "https://www.google.com/s2/favicons?sz=64&domain=kaggle.com" },
+
+    { "id": "zhipu", "name": "智谱清言", "url": "https://chatglm.cn", "description": "GLM 模型与应用", "categoryIds": ["models", "apps"], "tags": ["GLM", "中文"], "icon": "https://www.google.com/s2/favicons?sz=64&domain=chatglm.cn" },
+    { "id": "baidu-yiyan", "name": "文心一言", "url": "https://yiyan.baidu.com", "description": "百度文心大模型", "categoryIds": ["models", "apps"], "tags": ["ERNIE", "中文"], "icon": "https://www.google.com/s2/favicons?sz=64&domain=yiyan.baidu.com" },
+    { "id": "aliyun-qwen", "name": "通义千问", "url": "https://qwen.alibaba.com", "description": "阿里巴巴通义模型家族", "categoryIds": ["models", "tools"], "tags": ["Qwen", "阿里云"], "icon": "https://www.google.com/s2/favicons?sz=64&domain=qwen.alibaba.com" },
+    { "id": "moonshot-kimi", "name": "Kimi", "url": "https://kimi.moonshot.cn", "description": "Moonshot AI 长文助手", "categoryIds": ["apps"], "tags": ["长文", "中文"], "icon": "https://www.google.com/s2/favicons?sz=64&domain=kimi.moonshot.cn" },
+    { "id": "iflytek-spark", "name": "讯飞星火", "url": "https://xinghuo.xfyun.cn", "description": "科大讯飞星火模型", "categoryIds": ["models", "apps"], "tags": ["中文", "教育"], "icon": "https://www.google.com/s2/favicons?sz=64&domain=xinghuo.xfyun.cn" },
+    { "id": "baichuan", "name": "百川智能", "url": "https://www.baichuan-ai.com", "description": "Baichuan 系列开源与商用模型", "categoryIds": ["models"], "tags": ["Baichuan", "中文"], "icon": "https://www.google.com/s2/favicons?sz=64&domain=baichuan-ai.com" },
+
+    { "id": "notebooklm", "name": "NotebookLM", "url": "https://notebooklm.google", "description": "根据资料生成 AI 笔记与问答", "categoryIds": ["education", "apps"], "tags": ["Study", "RAG"], "icon": "https://www.google.com/s2/favicons?sz=64&domain=notebooklm.google" },
+    { "id": "phind", "name": "Phind", "url": "https://www.phind.com", "description": "为开发者优化的搜索与编程助手", "categoryIds": ["code", "apps"], "tags": ["Search", "Coding"], "icon": "https://www.google.com/s2/favicons?sz=64&domain=phind.com" },
+    { "id": "glif", "name": "Glif", "url": "https://glif.app", "description": "可视化构建 AI 智能体", "categoryIds": ["agents", "tools"], "tags": ["Visual", "Agents"], "icon": "https://www.google.com/s2/favicons?sz=64&domain=glif.app" },
+    { "id": "agentops", "name": "AgentOps", "url": "https://www.agentops.ai", "description": "智能体监控与评测", "categoryIds": ["agents", "tools"], "tags": ["Eval", "Tracing"], "icon": "https://www.google.com/s2/favicons?sz=64&domain=agentops.ai" },
+
+    { "id": "supabase", "name": "Supabase", "url": "https://supabase.com", "description": "开源后端与向量（pgvector）", "categoryIds": ["infra", "tools"], "tags": ["Database", "Vector"], "icon": "https://www.google.com/s2/favicons?sz=64&domain=supabase.com" },
+    { "id": "pinecone", "name": "Pinecone", "url": "https://www.pinecone.io", "description": "向量数据库", "categoryIds": ["infra"], "tags": ["Vector", "RAG"], "icon": "https://www.google.com/s2/favicons?sz=64&domain=pinecone.io" },
+    { "id": "weaviate", "name": "Weaviate", "url": "https://weaviate.io", "description": "开源/托管向量数据库", "categoryIds": ["infra"], "tags": ["Vector", "Open Source"], "icon": "https://www.google.com/s2/favicons?sz=64&domain=weaviate.io" },
+
+    { "id": "figma", "name": "Figma AI", "url": "https://www.figma.com/", "description": "设计与原型协作（含 AI 功能）", "categoryIds": ["design"], "tags": ["Design", "Prototype"], "icon": "https://www.google.com/s2/favicons?sz=64&domain=figma.com" },
+    { "id": "canva", "name": "Canva", "url": "https://www.canva.com", "description": "一体化设计平台（Magic 设计）", "categoryIds": ["design"], "tags": ["Design", "Template"], "icon": "https://www.google.com/s2/favicons?sz=64&domain=canva.com" },
+
+    { "id": "slack-ai", "name": "Slack AI", "url": "https://slack.com/ai", "description": "会议要点与摘要", "categoryIds": ["productivity"], "tags": ["Summarize", "Work"], "icon": "https://www.google.com/s2/favicons?sz=64&domain=slack.com" },
+    { "id": "zapier-ai", "name": "Zapier AI", "url": "https://zapier.com/ai", "description": "工作流自动化与 AI", "categoryIds": ["productivity"], "tags": ["Automation", "Agents"], "icon": "https://www.google.com/s2/favicons?sz=64&domain=zapier.com" },
+
+    { "id": "discord-ai", "name": "Discord AI", "url": "https://discord.com", "description": "Midjourney/社区常用平台", "categoryIds": ["community"], "tags": ["Chat", "Community"], "icon": "https://www.google.com/s2/favicons?sz=64&domain=discord.com" }
+  ]
+}
+
+

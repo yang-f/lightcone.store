@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="lcg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#68d3ff"/>
+      <stop offset="50%" stop-color="#7a7dff"/>
+      <stop offset="100%" stop-color="#ff89d6"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#07080b"/>
+  <!-- Simple light cone -->
++  <g transform="translate(8,8)">
++    <!-- worldline -->
++    <path d="M24 0 L24 48" stroke="url(#lcg)" stroke-width="2.5" stroke-linecap="round"/>
++    <!-- apex -->
++    <circle cx="24" cy="24" r="4" fill="#68d3ff"/>
++    <!-- future cone -->
++    <path d="M24 24 L48 12 L48 36 Z" fill="url(#lcg)" fill-opacity="0.2"/>
++    <path d="M24 24 L48 12" stroke="url(#lcg)" stroke-width="2.5"/>
++    <path d="M24 24 L48 36" stroke="url(#lcg)" stroke-width="2.5"/>
++    <!-- past cone -->
++    <path d="M24 24 L8 16 L8 32 Z" fill="url(#lcg)" fill-opacity="0.15"/>
++    <path d="M24 24 L8 16" stroke="url(#lcg)" stroke-width="2" stroke-opacity="0.6"/>
++    <path d="M24 24 L8 32" stroke="url(#lcg)" stroke-width="2" stroke-opacity="0.6"/>
++  </g>
+</svg>
+

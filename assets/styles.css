@@ -1,0 +1,116 @@
+:root {
+  --bg: #07080b;
+  --panel: #0e1116;
+  --text: #e6e8ee;
+  --muted: #9aa3b2;
+  --primary: #78c8ff; /* LightCone gradient mid */
+  --accent-1: #68d3ff;
+  --accent-2: #7a7dff;
+  --accent-3: #ff89d6;
+  --chip: #121827;
+  --border: #1a2030;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #ffffff;
+    --panel: #f6f7f9;
+    --text: #1b2430;
+    --muted: #5b6574;
+    --primary: #2b6de9;
+    --chip: #eef1f6;
+    --border: #e1e6ef;
+  }
+}
+
+/* theme override via [data-theme] */
+[data-theme="light"] {
+  --bg: #ffffff;
+  --panel: #f6f7f9;
+  --text: #1b2430;
+  --muted: #5b6574;
+  --primary: #2b6de9;
+  --chip: #eef1f6;
+  --border: #e1e6ef;
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+  background: var(--bg);
+  color: var(--text);
+}
+
+.container { width: min(1100px, 92%); margin: 0 auto; }
+
+.site-header {
+  position: sticky; top: 0; z-index: 20;
+  background: rgba(0,0,0,0.3);
+  backdrop-filter: saturate(150%) blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+.header-inner { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; }
+.logo { margin: 0; font-size: 20px; letter-spacing: .5px; }
+.logo .brand { background: linear-gradient(90deg, var(--accent-1), var(--accent-2), var(--accent-3)); -webkit-background-clip: text; background-clip: text; color: transparent; font-weight: 700; }
+.controls { display: flex; gap: 10px; }
+
+.btn {
+  background: var(--chip);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn:hover { border-color: var(--primary); }
+
+.search-section { padding: 22px 0 8px; }
+.search-input {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  color: var(--text);
+  outline: none;
+}
+.search-input::placeholder { color: var(--muted); }
+
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.chip {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 6px 10px; border-radius: 999px; border: 1px solid var(--border);
+  background: var(--chip); color: var(--text); cursor: pointer; font-size: 13px;
+}
+.chip.active { border-color: var(--primary); box-shadow: 0 0 0 2px color-mix(in oklab, var(--primary), transparent 80%); }
+
+.toolbar { display: flex; gap: 12px; align-items: center; margin-top: 12px; color: var(--muted); }
+.select { padding: 8px 10px; border-radius: 8px; border: 1px solid var(--border); background: var(--panel); color: var(--text); }
+.checkbox input { margin-right: 6px; }
+
+.section-title { font-size: 16px; margin: 18px 0 10px; color: var(--muted); }
+.grid { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 14px; }
+@media (max-width: 1024px) { .grid { grid-template-columns: repeat(3, minmax(0,1fr)); } }
+@media (max-width: 768px) { .grid { grid-template-columns: repeat(2, minmax(0,1fr)); } }
+@media (max-width: 520px) { .grid { grid-template-columns: 1fr; } }
+
+.card { border: 1px solid var(--border); border-radius: 12px; background: var(--panel); padding: 14px; display: flex; gap: 12px; }
+.card:hover { border-color: var(--primary); box-shadow: 0 0 0 1px color-mix(in oklab, var(--primary), transparent 70%); }
+.card .icon { width: 28px; height: 28px; border-radius: 6px; flex-shrink: 0; }
+.card .content { flex: 1; min-width: 0; }
+.card .title { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.card .title a { color: var(--text); text-decoration: none; font-weight: 600; }
+.card .title a:hover { color: var(--primary); }
+.card .desc { color: var(--muted); font-size: 13px; margin-top: 6px; line-height: 1.5; }
+.card .meta { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.tag { font-size: 12px; padding: 3px 8px; border: 1px solid var(--border); background: var(--chip); border-radius: 999px; color: var(--muted); }
+
+.fav-btn { cursor: pointer; border: 1px solid var(--border); background: var(--chip); color: var(--text); padding: 6px 8px; border-radius: 8px; }
+.fav-btn.active { border-color: var(--primary); color: var(--primary); box-shadow: 0 0 0 2px color-mix(in oklab, var(--primary), transparent 85%); }
+
+.site-footer { border-top: 1px solid var(--border); margin-top: 28px; padding: 18px 0; color: var(--muted); font-size: 13px; }
+
+

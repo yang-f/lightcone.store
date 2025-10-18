@@ -102,7 +102,7 @@ body {
 .card .icon { width: 28px; height: 28px; border-radius: 6px; flex-shrink: 0; }
 .card .content { flex: 1; min-width: 0; }
 .card .title { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
-.card .title a { color: var(--text); text-decoration: none; font-weight: 600; }
+.card .title a { color: var(--text); text-decoration: none; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100px; }
 .card .title a:hover { color: var(--primary); }
 .card .desc { color: var(--muted); font-size: 13px; margin-top: 6px; line-height: 1.5; }
 .card .meta { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
